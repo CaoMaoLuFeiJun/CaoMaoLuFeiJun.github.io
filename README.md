@@ -1,49 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Share</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>AppShare</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apps.html">Apps</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <main>
-        <section class="featured-apps">
-            <h2>Featured Apps</h2>
-            <div class="app-list">
-                <div class="app-item">
-                    <img src="app-icon1.png" alt="App 1">
-                    <h3>App 1</h3>
-                    <p>A great app for productivity!</p>
-                    <a href="#">Download</a>
-                </div>
-                <div class="app-item">
-                    <img src="app-icon2.png" alt="App 2">
-                    <h3>App 2</h3>
-                    <p>Fun and engaging gaming app.</p>
-                    <a href="#">Download</a>
-                </div>
-                <!-- More apps here -->
-            </div>
-        </section>
-    </main>
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
 
-    <footer>
-        <p>&copy; 2025 AppShare. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+header .logo h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-apps {
+    text-align: center;
+}
+
+.app-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.app-item a {
+    display: block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
